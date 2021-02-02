@@ -1,0 +1,127 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 30px 120px 200px 175px;
+    grid-template-columns: minmax(50px, auto);
+    grid-row-gap: 0;
+    z-index: 0;
+    
+    grid-template-areas:
+        "yellowHeader"
+        "blackBar"
+        "video"
+        "courseInfo" 
+}
+
+.yellowBarClose img {
+    vertical-align: middle;
+    position: absolute;
+    border: 0;
+    top: 0;
+    left: 564;
+    bottom: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    float: right;
+    cursor: pointer;
+    z-index: 99999;
+    border-bottom: 0px solid transparent;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0px 10px 0px rbg( 0 0 0 / 35%);
+
+}
+
+.menu-logo img {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    
+}
+
+.grid-item-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 33px;
+    border-bottom: 0px solid transparent;
+    z-index: 98998;
+    padding: 5px;
+    background-color: #fdb715;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .025em;
+    line-height: center;
+    box-sizing: inherit;
+    box-shadow: -.5px .5px 7px rgb(49, 49, 49);
+    
+}
+
+
+
+.grid-item-2 {
+    grid-area: blackBar;
+    background-color: #2b2b2b;
+    right: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    min-height: 33px;
+    border-bottom: 0px solid transparent;
+    z-index: 97999;
+    padding: 0;
+
+}
+
+/* .search-block-right {
+    position: fixed;
+    background-color: transparent;
+    right: 0;
+    left: 564;
+    top: 40px;
+    width: 120px;
+    height: 60px;
+    min-height: 33px;
+    z-index: 97999;
+    padding: 0;
+} */
+
+.searchIcon {
+    vertical-align: middle;
+    position: absolute;
+    top: 10px; 
+    left: 200px;
+    bottom: 0; 
+    right: 0;
+    height: 17px;
+    width: 17px;
+    /* float: right; */
+    cursor: pointer;
+    z-index: 99999;
+    /* border-bottom: 0px solid transparent; */
+    padding: 15px;
+    /* box-sizing: border-box; */
+    /* box-shadow: 0 0px 10px 0px rbg( 0 0 0 / 35%); */
+}
+
+
+.grid-item-3 {
+    grid-area: video;
+    background-color: burlywood;
+}
+
+.grid-item-4 {
+    grid-area: courseInfo;
+    background-color: cornsilk;
+}
