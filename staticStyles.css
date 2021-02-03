@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-rows: 30px 120px 200px 175px;
+    grid-template-rows: 30px 120px;
     grid-template-columns: minmax(50px, auto);
     grid-row-gap: 0;
     z-index: 0;
@@ -101,7 +101,7 @@
     vertical-align: middle;
     position: absolute;
     top: 10px; 
-    left: 200px;
+    left: 564;
     bottom: 0; 
     right: 0;
     height: 17px;
@@ -115,13 +115,55 @@
     /* box-shadow: 0 0px 10px 0px rbg( 0 0 0 / 35%); */
 }
 
-
-.grid-item-3 {
-    grid-area: video;
-    background-color: burlywood;
+.attendAFree {
+    vertical-align: middle;
+    position: absolute;
+    font-size: 40pt;
+    top: 250px;
+    right: 250px ;
+    left: 250px;
+    z-index: 96999;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .025em;
+    background-color: rgba(0, 0, 0, 0.233);
 }
 
-.grid-item-4 {
-    grid-area: courseInfo;
-    background-color: cornsilk;
+.introCourse {
+    vertical-align: middle;
+    position: absolute;
+    font-size: 40pt;
+    top: 320px;
+    right: 250px ;
+    left: 250px;
+    z-index: 96999;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .025em;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.learnMoreButton {
+    vertical-align: middle;
+    position: absolute;
+    font-size: 25pt;
+    top: 500px;
+    right: 250px ;
+    left: 250px;
+    z-index: 96999;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(253, 66, 66, 0.986);
+}
+
+#fullscreenConditional {
+    position: absolute;
+    padding: 0;
+    block-size: fit-content;
+    width: auto;
+    height: auto;
+    top: 5em;
+    right: 0;
+    bottom: 
+    left: 0;
+    
 }
